@@ -5,8 +5,7 @@ const Detail = (props) => {
   return (
     <React.Fragment>
       <h3>{props.pockemon.name}</h3>
-      <p></p>
-      <p></p>
+      <p>Picture: {props.pockemon.url}</p>
     </React.Fragment>
   )
 }

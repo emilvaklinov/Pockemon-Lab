@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Selector = (props) => {
-  const options = props.pockemons.map((pockemon.index)=>{
+  const options = props.pockemons.map((pockemon, index)=>{
     return <option value={index} key={index}>{pockemon.name}</option>
   })
 
@@ -11,7 +11,8 @@ const Selector = (props) => {
 
   return (
     <select id="pockemon-selector" onChange={handleChange} defaultValue="default">
-      <option></option>
+      <option disabled value="default">Tacke a pockemon..</option>
+      {options}
     </select>
   )
 }
